@@ -350,7 +350,9 @@ python gemini_install.py /usr/local /usr/local/share/gemini
 gemini load -v Variants/SLGFSK.ann.vcf -t snpEff Annotation/gemini.db
 		
 ```
-	
+
+Genimi annotation required additional download of annotation resources and databases that totaled to 21GB. Due to lack of enough resources (bundles and Storage space) to download these resources, we rather reverted to upload the generated VCFs into Galaxy and perfrmed the rest of the Annotation with Gemini there with steps described under the Galaxy workflow section.
+
 	
 # Section Two:  `GALAXY WORKFLOW` <a name="galaxy">.</a>
 
