@@ -200,7 +200,7 @@ do
         Index BAM file
         samtools index Mapping/${sample}.sorted.bam
 done
-```	
+```
 
 #### Mapped reads filtering
 	
@@ -221,7 +221,7 @@ samtools flagstat <bam file>
 During library construction sometimes there's introduction of PCR (Polymerase Chain Reaction) duplicates, these duplicates usually can result in false SNPs (Single Nucleotide Polymorphisms), whereby the can manifest themselves as high read depth support. A low number of duplicates (<5%) in good libraries is considered standard.
 
 ```
-#use the command <markdup>
+#use the command markdup
 for sample in `cat list.txt`
 do
 	samtools collate -o Mapping/${sample}.namecollate.bam Mapping/${sample}.filtered1.bam
@@ -230,16 +230,17 @@ do
         samtools markdup -@32 -r Mapping/${sample}.positionsort.bam Mapping/${sample}.clean.bam
 done
 	
-#or <rmdup>
-samtools rmdup SLGFSK35.sorted.bam  SLGFSK35.rdup and samtools rmdup SLGFSK36.sorted.bam  SLGFSK36.rdup.
+#or rmdup
+samtools rmdup SLGFSK35.sorted.bam  SLGFSK35.rdup and samtools rmdup SLGFSK36.sorted.bam  SLGFSK36.rdup
 ```
 
 #### Left Align BAM
 ```
 for sample in `cat list.txt`
-do
-        #-c -> compressed, -m -> max-iterations
+do      
         cat Mapping/${sample}.clean.bam  | bamleftalign -f hg19.chr5_12_17.fa -m 5 -c > Mapping/${sample}.leftAlign.bam
+
+#-c - compressed, -m - max-iterations
 ```
 
 #### Recalibrate read mapping qualities
@@ -255,7 +256,7 @@ done
 ```
 for sample in `cat list.txt`
 do
-        bamtools filter -in Mapping/${sample}.recalibrate.bam -mapQuality "<=254" > Mapping/${sample}.refilter.bam
+        bamtools filter -in Mapping/${sample}.recalibrate.bam -mapQuality <=254 > Mapping/${sample}.refilter.bam
 done
 ```
 
@@ -428,6 +429,7 @@ The quality reads did not change much as the datasets were already of high quali
 ![Quality Report](https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/239987436_10225646827778773_1891502870608261843_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeGnbdwBY8IClJwm7Pt5IMyEgm4s8KvpWKSCbizwq-lYpEBMKxp3jTzE1uCc4A4hPZU&_nc_ohc=dNsRndgpP9cAX_E12j8&_nc_ht=scontent.fcai20-3.fna&oh=f8ef18b98ef5f7e9300616fe67585935&oe=6124D5BA)
 
 ![Quality Report](https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/239939775_10225646828178783_4978182995878171958_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeEbSPFnKNZSQ1lwLKiEAJN7PU9sMEthmiU9T2wwS2GaJaw4KG3CdEHZIDmkt9PEA10&_nc_ohc=LCgTxenAqUQAX8ba8w4&_nc_ht=scontent.fcai20-3.fna&oh=fe03893345cfc2a4f0382c2c40544e91&oe=6125378E)
+
 
 	
 ## Read Mapping
@@ -636,6 +638,12 @@ In additon, We all came up with one comprehensive workflow for the entire team t
 - @Marvellous - Documented about adding additional Annotation to the Gene-Centered Report using Uniprot. [Galaxy Workflow](https://usegalaxy.eu/u/marvellous_oyebanjo/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs3) 
 - @juwon - Wrote the Introduction section of the documentation describing the goal of the tutrial and the approach we took [Link to Workflow](https://usegalaxy.eu/u/rachael-eo/w/workflow-constructed-from-history-team-genomicstwoa)
 
+
+| Slack Username | Description of Contribution |
+|----------------|-----------------------------|
+| @Rachael       | Documented genetic and clinical evidence-based annotations under Annotation with Gemini. [Link to her whole galaxy workflow](https://usegalaxy.eu/u/rachael-eo/w/workflow-constructed-from-history-genomics-twoarachael-1) |
+|----------------|-----------------------------|
+| @Mercy         | Documented Variant Calling and Classification Using VarScan Somatic [Link to her whole galaxy workflow](https://usegalaxy.eu/u/mercyoni/w/workflow-constructed-from-history-genomic-two-a-mercy) |
 
 2. Linux Workflow  
 A few team members Embarked on reproducing the same tutorial as a Linux Pipeline. We generated a conscise bash script that implements the steps that is added to the 
