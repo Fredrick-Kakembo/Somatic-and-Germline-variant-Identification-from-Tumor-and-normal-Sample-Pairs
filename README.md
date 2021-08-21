@@ -356,7 +356,9 @@ gemini load -v Variants/SLGFSK.ann.vcf -t snpEff Annotation/gemini.db
 The sequencing reads that were used for analysis were obtained from a cancer patient's normal and tumor tissues.
 There were a total of four samples. A forward reads sample and a reverse reads sample was obtained for both the normal and tumor tissue. A human reference genome, hg19 version was also used for analysis.
 
-The first step was to create a new workflow we named Genomics_2_A in the galaxy window. We then imported the 4 fastq files and the reference using the `Upload` button then `Paste/Fetch Data` and pasting the corresponding links to the data, selecting datatype as `fastqsanger.gz` for the fsatq samples and `fasta` for the reference. Once done uploading, the attributes of the samples were edited using the pencil mark to **tumor** and **normal** correspondily for easier identification.
+The first step was to create a new workflow we named Genomicstwoa in the galaxy window. We then imported the 4 fastq files and the reference using the `Upload` button then `Paste/Fetch Data` and pasting the corresponding links to the data, selecting datatype as `fastqsanger.gz` for the fsatq samples and `fasta` for the reference. Once done uploading, the attributes of the samples were edited using the pencil mark to **tumor** and **normal** correspondily for easier identification.
+
+After getting the data files, which are of .fastq format, we checked for each quality alone using FastQC tool and then we checked the quality of data all together using MultiQC tool (as the inputs for that tool are the seperated FastQC report files and the output is MultiQC report file) and both tools are available online on Galaxy platform.
 
 ## 2.  Quality Control & Check:
 
