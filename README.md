@@ -373,29 +373,25 @@ The MultiQC Output & Report:
 For the quality control analysis, the following figures show that the chosen dataset is of high quality for both Normal R1 & R2 datasets and both Tumor R1 & R2 datasets even the tumor ones are of poorer quality than the normal ones:
 o   All nucleotides have high-quality scores, (the forward and reverse reads of normal and tumor patient’s tissues), as they all are present in high/good quality region.
 
-![Quality Report](https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/239887479_10225646820098581_7852584000625137608_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeEGg5POsRQ22z30bSKJKOHMNyXKaVeIx-Q3JcppV4jH5H7955fLdsp5_S5xl6vVh4A&_nc_ohc=qsVI3WWfM6MAX-9V1fz&_nc_ht=scontent.fcai20-3.fna&oh=0f87104f5f97008322df582eea23119f&oe=61249517)
-
  o	Good quality score distribution as the mean is high with a sharp, distinct peak.
-
-![Quality Report](https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/240386199_10225646820338587_8217938469652979046_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeHfYmVb7PRpPMCZZSub8LeiagTNa3_Pz8lqBM1rf8_PyQOIPyzQKNJrrF5grXk5bpU&_nc_ohc=G1o6LS9X_hYAX-478Tr&_nc_ht=scontent.fcai20-3.fna&oh=e2a9dbde12186e84f979a5391d58fa84&oe=6124BBAD)
 
 o	The actual mean of the GC% content is lower than the theoretical one and that is a non-normal distribution which may indicate some contamination; however, this peculiar bimodal distribution is considered to be a hallmark of the captured method as using Agilent’s SureSelect V5 technology for exome enrichment.
 
-![Quality Report](https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/240332287_10225646820538592_1031475029124752916_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeF1xpsEQ-0f3Eb3Mqxtc-Npz8gRJUkIxxLPyBElSQjHEp63raX5oUlFIBOhFqte0o4&_nc_ohc=3X7mee3XrsMAX8VAWOt&_nc_ht=scontent.fcai20-3.fna&oh=dadab37eda7bc7095539a18260709433&oe=61251953)
-
 o	The N content is zero, thus not indicating any bad base detection.
-
-![Quality Report](https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/239932544_10225646821178608_1804771247842536342_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeFJ5LZYvlO_zgrhPl4Qvqy0RC3ghuo8qpxELeCG6jyqnLVOoaNAXDmrf5lC-FTyqoA&_nc_ohc=TsZziKppm1gAX8l1FUW&tn=D8rHGaIJCwa8Og3I&_nc_ht=scontent.fcai20-3.fna&oh=3753222c1f2642ed1b8f013d8ae71218&oe=6123FF0F)
 
 o	Sequence duplication level is good as well with almost no PCR biases when library was prepared as there is no over-amplified fragment.
 
-![Quality Report](https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/240452151_10225646820978603_4722043033758089712_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeFO1KjcfjwGSAM-xaMakh3a9bVbKhLaQoT1tVsqEtpChIiRWFZIA79Wijx9qGdCRHA&_nc_ohc=EVOa3QcTTFUAX-an6Ea&tn=D8rHGaIJCwa8Og3I&_nc_ht=scontent.fcai20-3.fna&oh=15a70d18a95a3ab36bec20f483ece380&oe=612406E1)
-
 o	There is a little presence of adaptors in the sequence.
 
-![Quality Report](https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/240066890_10225646821418614_9064760851692879195_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeHvZIsBRpPCCRbJELOa_nlbsKsWUcxpgYmwqxZRzGmBid0AqMMgD3B6gqZWkCywp5c&_nc_ohc=fjLSS02SO9wAX9MNlaP&_nc_ht=scontent.fcai20-3.fna&oh=4fa0d302f28428aa9f67700fa89854d6&oe=612565FC)
-
-
+<p> 
+<img src="Images/Pre1.jpg" alt="Mean Quality Scores" width="450" height="350" /> <img src="Images/Pre2.jpg" alt="Mean Quality Scores" width="450" height="350" />
+</p>
+<p> 
+<img src="Images/Pre3.jpg" alt="Mean Quality Scores" width="450" height="350" /> <img src="Images/Pre4.jpg" alt="Mean Quality Scores" width="450" height="350" />
+</p>
+<p> 
+<img src="Images/Pre5.jpg" alt="Mean Quality Scores" width="450" height="350" /> <img src="Images/Pre6.jpg" alt="Mean Quality Scores" width="450" height="350" />
+</p>
 
 ## Read Trimming and Filtering
 
@@ -418,18 +414,15 @@ The next process after quality control is Trimming and Filtering. This process f
 
 The quality reads did not change much as the datasets were already of high quality although a small fraction of adapter is successfully removed as shown in the following report:
 
-![Quality Report](https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/239936305_10225646826698746_7439285328275684759_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeEHowE9hJvIdP00B3bXEG5QGNS2Mrs4sTEY1LYyuzixMaJmAJ4zP9daBQiwILofdJ8&_nc_ohc=tUKGyhg8GkgAX8GLGoh&_nc_ht=scontent.fcai20-3.fna&oh=9a6524fc18a614b7d92f3cd04231ef24&oe=6124AFE5)
-
-![Quality Report](https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/240397072_10225646826898751_7144027909249758575_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeGiMN88ld5QT1-kVw42WldImmCThDU_8KmaYJOENT_wqY4BeSIlAskfw6yiEsQrkqw&_nc_ohc=GsLoATZazrIAX9uuOWd&_nc_oc=AQkvTp0FpyMonETpOoyRdYs3gDhNhZRgJJY5mRPVZ5ZKlSDkl5-VHa_qi5bhfVcQDxM&tn=D8rHGaIJCwa8Og3I&_nc_ht=scontent.fcai20-3.fna&oh=215b57e346986a002f0d71d5ac061d18&oe=6124CD76)
-
-![Quality Report](https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/240390881_10225646827178758_2588812202487255242_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeH6iYY4sXoq-PtVR8WdrtGfKvLEkz25rGwq8sSTPbmsbI0W9PNZYH6qo6HWtw4s8wU&_nc_ohc=zSrgQ62Q78EAX-Y-u1r&_nc_ht=scontent.fcai20-3.fna&oh=4cf0962b0311512e5bc0348ebc787e5a&oe=61254AF6)
-
-![Quality Report](https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/240169098_10225646827578768_8014971172963904116_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeGFQKCezKwD92wndqrvfaeDG5H1YPTmNIwbkfVg9OY0jPmwsfygta-ncYjVKHNB7hY&_nc_ohc=D2HaXxam1p4AX9Fajg2&_nc_ht=scontent.fcai20-3.fna&oh=3a60075320e6cdaffa5a4d466a2aa254&oe=612423E1)
-
-![Quality Report](https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/239987436_10225646827778773_1891502870608261843_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeGnbdwBY8IClJwm7Pt5IMyEgm4s8KvpWKSCbizwq-lYpEBMKxp3jTzE1uCc4A4hPZU&_nc_ohc=dNsRndgpP9cAX_E12j8&_nc_ht=scontent.fcai20-3.fna&oh=f8ef18b98ef5f7e9300616fe67585935&oe=6124D5BA)
-
-![Quality Report](https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/239939775_10225646828178783_4978182995878171958_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeEbSPFnKNZSQ1lwLKiEAJN7PU9sMEthmiU9T2wwS2GaJaw4KG3CdEHZIDmkt9PEA10&_nc_ohc=LCgTxenAqUQAX8ba8w4&_nc_ht=scontent.fcai20-3.fna&oh=fe03893345cfc2a4f0382c2c40544e91&oe=6125378E)
-
+<p> 
+<img src="Images/Post1.jpg" alt="Mean Quality Scores" width="450" height="350" /> <img src="Images/Post2.jpg" alt="Mean Quality Scores" width="450" height="350" />
+</p>
+<p> 
+<img src="Images/Post3.jpg" alt="Mean Quality Scores" width="450" height="350" /> <img src="Images/Post4.jpg" alt="Mean Quality Scores" width="450" height="350" />
+</p>
+<p> 
+<img src="Images/Post5.jpg" alt="Mean Quality Scores" width="450" height="350" /> <img src="Images/Post6.jpg" alt="Mean Quality Scores" width="450" height="350" />
+</p>
 
 	
 ## Read Mapping
