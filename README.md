@@ -644,8 +644,9 @@ A few team members Embarked on reproducing the same tutorial as a Linux Pipeline
 - @Gladys - Described the alignment process using BWA-MEM 
 - @Nanje - Performed and described the Variant calling steps using VarScan somatic. 
 		
+
+</br>
 		
-<br>
 # Tutorial Reference:
 
 - https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/somatic-variants/tutorial.html
