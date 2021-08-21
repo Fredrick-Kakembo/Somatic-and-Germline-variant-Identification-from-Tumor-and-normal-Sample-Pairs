@@ -604,7 +604,7 @@ The last output of the Join operation was selected in the “file to arrange” 
 
 1. Galaxy Workflow:
 - @Rachael - Adding genetic and clinical evidence-based annotations [Link to galaxy workflow](https://usegalaxy.eu/u/rachael-eo/w/workflow-constructed-from-history-genomics-twoarachael-1)
-- @Mercy - Variants Calling and Classification Using VarScan Somatic [Link to galaxy workflow] (https://usegalaxy.eu/u/mercyoni/w/workflow-constructed-from-history-genomic-two-a-mercy)
+- @Mercy - Variants Calling and Classification Using VarScan Somatic [Link to galaxy workflow](https://usegalaxy.eu/u/mercyoni/w/workflow-constructed-from-history-genomic-two-a-mercy)
 - @Neesah -Variant annotation and reporting/Functional annotations to the called variants [Link to galaxy workflow](https://usegalaxy.eu/u/nerdy_neesah1./w/workflow-constructed-for-identification-of-somatic-and-germline-variants-from-normal-and-tumor-sample-pairs-tutorial)
 - @Orinda-Mapped reads filtering and Duplicate reads removal-[My galaxy workflow](https://usegalaxy.eu/workflow/display_by_id?id=52354430d02f285c)
 
