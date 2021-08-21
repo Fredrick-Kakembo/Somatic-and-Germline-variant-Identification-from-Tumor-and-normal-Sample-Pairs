@@ -623,19 +623,20 @@ In additon, We all came up with one comprehensive workflow for the entire team t
 - @Mercy - Documented Variant Calling and Classification Using VarScan Somatic [Link to her whole galaxy workflow](https://usegalaxy.eu/u/mercyoni/w/workflow-constructed-from-history-genomic-two-a-mercy)
 - @Neesah - Written about Variant Functional annotation using snpEff eff [Link to her complete galaxy workflow](https://usegalaxy.eu/u/nerdy_neesah1./w/workflow-constructed-for-identification-of-somatic-and-germline-variants-from-normal-and-tumor-sample-pairs-tutorial)
 - @Orinda - Documented about Filtering of Mapped reads and Duplicate reads removal. [Link to her galaxy workflow](https://usegalaxy.eu/workflow/display_by_id?id=52354430d02f285c)
-- @Heshica - Documented about Postprocessing of Mapped Read ie Left-align reads around indels , Recalibrate read mapping qualities and Refilter reads based on mapping quality)[Link to her full Galaxy Workflow](https://usegalaxy.eu/u/heshica_battina_chowdary/w/normal-and-tumor-analysisheshica-genomics-2a)
+- @Heshica - Documented about Postprocessing of Mapped Read with Left-align reads around indels. Also helped with designing Graphical Abstract displayed at the start of the document. [Link to her full Galaxy Workflow](https://usegalaxy.eu/u/heshica_battina_chowdary/w/normal-and-tumor-analysisheshica-genomics-2a)
 - @VioletNwoke - Documented about Read mapping using BWA-MEM [Link to galaxy workflow](https://usegalaxy.eu/u/violet/w/workflow-constructed-from-history-hackbiogenomicstwoaviolet-4)
-- @AmaraA - Documented about 
-- @Amarachukwu -Reporting Selected Subsets of Variants and Generating Reports of Genes Affected by Variants(GEMINI Query) [Link to Galaxy workflow](https://usegalaxy.eu/u/amara_chike/w/somatic-variant-tutorial-genomics-2-a-1) 
-- @Mallika [Link to Galaxy Workflow](https://usegalaxy.eu/u/mallika_g/w/variant-analysis-mallika)
-- @Olamide - Read Trimming and Filtering [Link to Galaxy Workflow](https://usegalaxy.eu/u/olamide21/w/identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs) 
-- @NadaaHussienn - Quality Control and Check [Link to Galaxy Workflow](https://usegalaxy.eu/u/nadahussien/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs-3)
-- @Christabel- Conclusion [link to galaxy workflow](https://usegalaxy.eu/u/christabelmn1/w/somatic-and-germline-variants-and-gene-mutation-2)
-- @Marvellous - Adding additional Annotation to the Gene-Centered Report [Galaxy Workflow](https://usegalaxy.eu/u/marvellous_oyebanjo/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs3) 
-- @juwon - Introduction
+- @AmaraA - Documented about Recalibration of Read mapping qualities and Refilter reads in BAM file based on mapping quality.  She also worked on compiling all sections from the workflows into this single beutiful and extensive documentation. 
+- @Amarachukwu - Documented on Reporting of Selected Subsets of Variants and Generating Reports of Genes Affected by Variants as part of GEMINI Annotation [Link to Galaxy workflow](https://usegalaxy.eu/u/amara_chike/w/somatic-variant-tutorial-genomics-2-a-1) 
+- @Mallika - Descibed the datasets that were used in the dataset, how they were obtained and imported in the analysis workflow. She also designed the Graphical Abstract together with Heshica. [Link to Galaxy Workflow](https://usegalaxy.eu/u/mallika_g/w/variant-analysis-mallika)
+- @Olamide - Documented Read Trimming and Filtering using Trimmomatic [Link to Galaxy Workflow](https://usegalaxy.eu/u/olamide21/w/identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs) 
+- @NadaaHussienn - Described the quality Quality Control Check before and after trimming using Fastqc and Multiqc. [Link to Galaxy Workflow](https://usegalaxy.eu/u/nadahussien/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs-3)
+- @Christabel- Provided a concise Discussion and Conclusion of the results generated in the galaxy workflow [link to galaxy workflow](https://usegalaxy.eu/u/christabelmn1/w/somatic-and-germline-variants-and-gene-mutation-2)
+- @Marvellous - Documented about adding additional Annotation to the Gene-Centered Report using Uniprot. [Galaxy Workflow](https://usegalaxy.eu/u/marvellous_oyebanjo/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs3) 
+- @juwon - Wrote the Introduction section of the documentation describing the goal of the tutrial and the approach we took [Link to Workflow](https://usegalaxy.eu/u/rachael-eo/w/workflow-constructed-from-history-team-genomicstwoa)
 
 
 2. Linux Workflow
+A few team members Embarked on reproducing the same tutorial as a Linux Pipeline. We generated a conscise bash script that implements the steps that is added to the 
 - @Praise
 - @Fredrick
 - @RuthMoraa
