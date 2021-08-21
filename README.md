@@ -476,6 +476,20 @@ The first Step in Recalibrating read mapping qualities is running CalMD tool fro
 
 Eliminating reads with undefined mapping quality
 We ran Filter BAM datasets on a variety of attributes tool using some parameters.          The  recalibrated datasets from the normal and the tumor tissue data which were the outputs of CalMD were selected as the BAM datasets to filter. Then we applied certain conditions as the options , in Filter, we selecte the MapQuality as the BAM property to Filter. Then set the value of less than or equal to 254 (<=254) as the Filter on read mapping quality (phred scale).
+		
+## Variant Calling and Classification using VarScan Somatic
+
+The purpose of this step is to use the tool "VarScan Somatic" to detect variant alleles in tumor or normal sample pairs, call sample genotypes at variant sites, as well as classify variants into germline, somatic and LOH event variants using solid classical statistics even in the presence of non-pure samples like those obtained from biopsies.
+
+After generating high quality set of mapped read pairs, we ran the "VarScan Somatic" with some parameters using the Human: h19 genome as our reference genome. 
+
+The mapped and filtered CalMD outputs of the normal and tumor tissue datasets were aligned to be read, and the estimated purity content for the normal and tumor samples were set to 1 and 0.5 respectively. 
+
+We then customized the settings for variants calling and set the "Minimum Base Quality" to 28. This was done to increase the base quality of our sequence data without throwing away a significant portion of the data. 
+
+The "Minimum Mapping Quality" was assigned to 1, in order to filter our sequence reads with a mapping quality of at least one as CalMD might have lowered some mapping qualities to zero.
+
+Then, we set the "Settings for Posterior Variant Filtering"as default values while leaving other settings to their default values as wellbefore executing. The result of this was an output file in VCF format.
 
 ## Variant annotation and reporting
 
@@ -590,7 +604,7 @@ The last output of the Join operation was selected in the “file to arrange” 
 
 1. Galaxy Workflow:
 - @Rachael - Adding genetic and clinical evidence-based annotations [Link to galaxy workflow](https://usegalaxy.eu/u/rachael-eo/w/workflow-constructed-from-history-genomics-twoarachael-1)
-- @Mercy
+- @Mercy - Variants Calling and Classification Using VarScan Somatic [Link to galaxy workflow] (https://usegalaxy.eu/u/mercyoni/w/workflow-constructed-from-history-genomic-two-a-mercy)
 - @Neesah -Variant annotation and reporting/Functional annotations to the called variants [Link to galaxy workflow](https://usegalaxy.eu/u/nerdy_neesah1./w/workflow-constructed-for-identification-of-somatic-and-germline-variants-from-normal-and-tumor-sample-pairs-tutorial)
 - @Orinda-Mapped reads filtering and Duplicate reads removal-[My galaxy workflow](https://usegalaxy.eu/workflow/display_by_id?id=52354430d02f285c)
 
