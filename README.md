@@ -647,4 +647,5 @@ A few team members Embarked on reproducing the same tutorial as a Linux Pipeline
 		
 <br>
 # Tutorial Reference:
+
 - https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/somatic-variants/tutorial.html
