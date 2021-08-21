@@ -606,7 +606,7 @@ The last output of the Join operation was selected in the “file to arrange” 
 
 ## Conclusion
 The Tumor/Normal data analysis workflow, consisting of Alignment and VarScan Somatic variant calling, demonstrates excellent performance for the detection of somatic variants. <br>
-Somatic variant calling not only calls variants but also distinguishes Cancer-specific variants (Somatic mutations) found only in tumor tissues from germline mutations that are shared by tumor and healthy tissue, and loss-of-heterozygosity events; that is, the absence of one of two alleles found at a biallelic site of healthy tissues, in tumor tissues. This makes it a more optimal approach for applications requiring high precision such as novel mutation detection and mutation signature analysis. <br>
+Somatic variant calling not only calls variants but also distinguishes Cancer-specific variants (Somatic mutations) found only in tumor tissues from germline mutations that are shared by tumor and healthy tissue and loss-of-heterozygosity events; that is, the absence of one of two alleles found at a biallelic site of healthy tissues, in tumor tissues. This makes it a more optimal approach for applications requiring high precision such as novel mutation detection and mutation signature analysis. <br>
 The interpretation of any list of variants (somatic, germline or LOH) almost always depends crucially on rich genetic and cancer-specific variants and gene annotations which can be inferred from the analysis.
 
 
