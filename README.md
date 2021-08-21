@@ -606,7 +606,7 @@ The last output of the Join operation was selected in the “file to arrange” 
 
 ## Conclusion
 The Tumor/Normal data analysis workflow, consisting of Alignment and VarScan Somatic variant calling, demonstrates excellent performance for the detection of somatic variants. <br>
-Somatic variant calling not only calls variants but also distinguishes Cancer-specific variants (Somatic mutations) found only in tumor tissues from germline mutations that are shared by tumor and healthy tissue and loss-of-heterozygosity events; that is, the absence of one of two alleles found at a biallelic site of healthy tissues, in tumor tissues. This makes it a more optimal approach for applications requiring high precision such as novel mutation detection and mutation signature analysis. <br>
+Somatic variant calling not only calls variants but also distinguishes Cancer-specific variants (Somatic mutations) found only in tumor tissues from germline mutations that are shared by tumor and healthy tissue, and loss-of-heterozygosity events; that is, the absence of one of two alleles found at a biallelic site of healthy tissues, in tumor tissues. This makes it a more optimal approach for applications requiring high precision such as novel mutation detection and mutation signature analysis. <br>
 The interpretation of any list of variants (somatic, germline or LOH) almost always depends crucially on rich genetic and cancer-specific variants and gene annotations which can be inferred from the analysis.
 
 
@@ -628,7 +628,7 @@ The interpretation of any list of variants (somatic, germline or LOH) almost alw
 - @Olamide - Read Trimming and Filtering [Link to Galaxy Workflow](https://usegalaxy.eu/u/olamide21/w/identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs) 
 - @NadaaHussienn - Quality Control and Check [Link to Galaxy Workflow](https://usegalaxy.eu/u/nadahussien/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs-3)
 - @Christabel- Conclusion [link to galaxy workflow](https://usegalaxy.eu/u/christabelmn1/w/somatic-and-germline-variants-and-gene-mutation-2)
-- @Marvellous - Adding additional Annotation to the Gene-Centered Report [Workflow 1](https://usegalaxy.eu/u/marvellous_oyebanjo/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs) and [Workflow 2](https://usegalaxy.eu/u/marvellous_oyebanjo/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs-2) 
+- @Marvellous - Adding additional Annotation to the Gene-Centered Report [Galaxy Workflow](https://usegalaxy.eu/u/marvellous_oyebanjo/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs3) 
 - @juwon - Introduction
 
 
