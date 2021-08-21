@@ -477,6 +477,22 @@ The first Step in Recalibrating read mapping qualities is running CalMD tool fro
 Eliminating reads with undefined mapping quality
 We ran Filter BAM datasets on a variety of attributes tool using some parameters.          The  recalibrated datasets from the normal and the tumor tissue data which were the outputs of CalMD were selected as the BAM datasets to filter. Then we applied certain conditions as the options , in Filter, we selecte the MapQuality as the BAM property to Filter. Then set the value of less than or equal to 254 (<=254) as the Filter on read mapping quality (phred scale).
 
+## Variant annotation and reporting
+
+The next step after refiltering reads based on mapping quality was to add annotation to the variants.
+This was done by importing variant annotations datasets from four different sources into galaxy workspace.
+Also gene-level annotation files was also imported from Zenodo, Since galaxy workspace has SnpEff functional genomic annotations installed in it database, Homo sapiens: hg19 was accessible. Alternatively we can use SnpEff Download tool to download genome annotation database hg19.
+
+## Functional annotations to the called variants
+
+The next step after importing variant and gene-level annotations was to utilize SnpEff tool to add functional annotations to the variants in comparison with the reference genome (Homo sapiens hg19).
+SnpEff is used to annotate and predict the effects of genetic variants on genes and proteins (such as amino acid changes).
+To do this, we ran the SnpEff eff Tool with the following parameters:
+* Sequence changes (SNPs, MNPs, InDels) : the output of VarScan somatic tool
+* Input format: VCF
+* Output format: VCF (only if input is VCF)
+* Genome source: Locally installed reference genome
+* Genome: Homo sapiens: hg19 (or a similarly named option)
 
 ## Adding genetic and clinical evidence_based annotation : Creating a GEMINI database for variants
 
@@ -575,6 +591,7 @@ The last output of the Join operation was selected in the “file to arrange” 
 1. Galaxy Workflow:
 - @Rachael - Adding genetic and clinical evidence-based annotations [Link to galaxy workflow](https://usegalaxy.eu/u/rachael-eo/w/workflow-constructed-from-history-genomics-twoarachael-1)
 - @Mercy
+- @Neesah -Variant annotation and reporting/Functional annotations to the called variants [Link to galaxy workflow] (https://usegalaxy.eu/u/nerdy_neesah1./w/workflow-constructed-for-identification-of-somatic-and-germline-variants-from-normal-and-tumor-sample-pairs-tutorial)
 - @Orinda
 - @Heshica - Mapped Read Postprocessing (Left-align reads around indels , Recalibrate read mapping qualities and Refilter reads based on mapping quality)[Link to Galaxy Workflow](https://usegalaxy.eu/u/heshica_battina_chowdary/w/normal-and-tumor-analysisheshica-genomics-2a)
 - @VioletNwoke - Read mapping [Link to galaxy workflow](https://usegalaxy.eu/u/violet/w/workflow-constructed-from-history-hackbiogenomicstwoaviolet-4)
