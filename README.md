@@ -637,9 +637,9 @@ In additon, We all came up with one comprehensive workflow for the entire team t
 
 2. Linux Workflow
 A few team members Embarked on reproducing the same tutorial as a Linux Pipeline. We generated a conscise bash script that implements the steps that is added to the 
-- @Praise
-- @Fredrick
-- @RuthMoraa
+- @Praise - Described the commands used to download the samples and reference. the nature of the data that we had. 
+- @Fredrick - Team Lead and worked on the documentation of the annotation section
+- @RuthMoraa - Documentation the steps of BAM files postprocessing
 - @Kauthar - Preprocessing(pre/post trim qc) and read trimming.
-- @Gladys
-- @Nanje
+- @Gladys - Described the alignment process using BWA-MEM 
+- @Nanje - Performed and described the Variant calling steps using VarScan somatic. 
