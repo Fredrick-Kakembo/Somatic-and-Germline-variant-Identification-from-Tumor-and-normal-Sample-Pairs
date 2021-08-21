@@ -613,17 +613,19 @@ The interpretation of any list of variants (somatic, germline or LOH) almost alw
 
 
 ---
-##  List of team members according to the environment used<a name="contributor">:</a>
+##  Contribution of team members according to the environment used<a name="contributor">:</a>
 
 1. Galaxy Workflow:
-- @Rachael - Adding genetic and clinical evidence-based annotations [Link to galaxy workflow](https://usegalaxy.eu/u/rachael-eo/w/workflow-constructed-from-history-genomics-twoarachael-1)
-- @Mercy - Variants Calling and Classification Using VarScan Somatic [Link to galaxy workflow](https://usegalaxy.eu/u/mercyoni/w/workflow-constructed-from-history-genomic-two-a-mercy)
-- @Neesah -Variant annotation and reporting/Functional annotations to the called variants [Link to galaxy workflow](https://usegalaxy.eu/u/nerdy_neesah1./w/workflow-constructed-for-identification-of-somatic-and-germline-variants-from-normal-and-tumor-sample-pairs-tutorial)
-- @Orinda-Mapped reads filtering and Duplicate reads removal-[Link to galaxy workflow](https://usegalaxy.eu/workflow/display_by_id?id=52354430d02f285c)
+Each person that chose to work on Galaxy ran the tutorial from start to end and Links to their workflow added besides their names. After each member had to document a chosen section within the Galaxy workflow section above.    
+In additon, We all came up with one comprehensive workflow for the entire team that can be [Found Here](https://usegalaxy.eu/u/rachael-eo/w/workflow-constructed-from-history-team-genomicstwoa)
 
-- @Heshica - Mapped Read Postprocessing (Left-align reads around indels , Recalibrate read mapping qualities and Refilter reads based on mapping quality)[Link to Galaxy Workflow](https://usegalaxy.eu/u/heshica_battina_chowdary/w/normal-and-tumor-analysisheshica-genomics-2a)
-- @VioletNwoke - Read mapping [Link to galaxy workflow](https://usegalaxy.eu/u/violet/w/workflow-constructed-from-history-hackbiogenomicstwoaviolet-4)
-- @AmaraA
+- @Rachael - Documented genetic and clinical evidence-based annotations under Annotation with Gemini. [Link to her whole galaxy workflow](https://usegalaxy.eu/u/rachael-eo/w/workflow-constructed-from-history-genomics-twoarachael-1)
+- @Mercy - Documented Variant Calling and Classification Using VarScan Somatic [Link to her whole galaxy workflow](https://usegalaxy.eu/u/mercyoni/w/workflow-constructed-from-history-genomic-two-a-mercy)
+- @Neesah - Written about Variant Functional annotation using snpEff eff [Link to her complete galaxy workflow](https://usegalaxy.eu/u/nerdy_neesah1./w/workflow-constructed-for-identification-of-somatic-and-germline-variants-from-normal-and-tumor-sample-pairs-tutorial)
+- @Orinda - Documented about Filtering of Mapped reads and Duplicate reads removal. [Link to her galaxy workflow](https://usegalaxy.eu/workflow/display_by_id?id=52354430d02f285c)
+- @Heshica - Documented about Postprocessing of Mapped Read ie Left-align reads around indels , Recalibrate read mapping qualities and Refilter reads based on mapping quality)[Link to her full Galaxy Workflow](https://usegalaxy.eu/u/heshica_battina_chowdary/w/normal-and-tumor-analysisheshica-genomics-2a)
+- @VioletNwoke - Documented about Read mapping using BWA-MEM [Link to galaxy workflow](https://usegalaxy.eu/u/violet/w/workflow-constructed-from-history-hackbiogenomicstwoaviolet-4)
+- @AmaraA - Documented about 
 - @Amarachukwu -Reporting Selected Subsets of Variants and Generating Reports of Genes Affected by Variants(GEMINI Query) [Link to Galaxy workflow](https://usegalaxy.eu/u/amara_chike/w/somatic-variant-tutorial-genomics-2-a-1) 
 - @Mallika [Link to Galaxy Workflow](https://usegalaxy.eu/u/mallika_g/w/variant-analysis-mallika)
 - @Olamide - Read Trimming and Filtering [Link to Galaxy Workflow](https://usegalaxy.eu/u/olamide21/w/identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs) 
