@@ -166,12 +166,19 @@ conda install -c bioconda bamtools
 #### Read mapping
 	
 In order to align the data, we need a reference to align against.  First, a directory is created for the reference and then copied. The reference is  indexed to be able to align the data.This is done using the command;
-bwa index hg19.chr5_12_17.fa
+	
+``` bwa index hg19.chr5_12_17.fa ```
+	
 This produces 5 files in the reference directory that BWA uses during the alignment phase. The 5 files have different extensions named amb,ann,bwt pac and sa. Alignment can be done using the command;
-Bwa mem
+	
+```Bwa mem```
+	
 Note that  bwa is given a location , which is the path to the reference. Now, the two paired-end files are aligned and the alignment output (in SAM format) directed to a file. 24 threads (processors) were used to speed up this process and a read group (i.e sample ID) information was added to the alignment:
- bwa mem -t 24 -R '@RG\tID:231335\tSM:Normal' ./reference/hg19.chr5_12_17.fa.gz SLGFSK-N_231335_r1_chr5_12_17.fastq.gz  SLGFSK-N_231335_r2_chr5_12_17.fastq.gz >SLGFSK-N_231335_paired.sam
- bwa mem -t 24 -R '@RG\tID:231336\tSM:Tumor' ./reference/hg19.chr5_12_17.fa.gz SLGFSK-T_231336_r1_chr5_12_17.fastq.gz SLGFSK-T_231336_r2_chr5_12_17.fastq.gz >SLGFSK-T_231336_paired.sam
+	
+ ```bwa mem -t 24 -R '@RG\tID:231335\tSM:Normal' ./reference/hg19.chr5_12_17.fa.gz SLGFSK-N_231335_r1_chr5_12_17.fastq.gz  SLGFSK-N_231335_r2_chr5_12_17.fastq.gz >SLGFSK-N_231335_paired.sam```
+	
+ ```bwa mem -t 24 -R '@RG\tID:231336\tSM:Tumor' ./reference/hg19.chr5_12_17.fa.gz SLGFSK-T_231336_r1_chr5_12_17.fastq.gz SLGFSK-T_231336_r2_chr5_12_17.fastq.gz >SLGFSK-T_231336_paired.sam```
+	
 
 	
 #### Conversion of the SAM file to BAM file, sorting and indexing
@@ -568,7 +575,7 @@ The last output of the Join operation was selected in the “file to arrange” 
 1. Galaxy Workflow:
 - @Rachael - Adding genetic and clinical evidence-based annotations [Link to galaxy workflow](https://usegalaxy.eu/u/rachael-eo/w/workflow-constructed-from-history-genomics-twoarachael-1)
 - @Mercy
-- @Orinda-Mapped reads filtering and Duplicate reads removal
+- @Orinda
 - @Heshica - Mapped Read Postprocessing (Left-align reads around indels , Recalibrate read mapping qualities and Refilter reads based on mapping quality)[Link to Galaxy Workflow](https://usegalaxy.eu/u/heshica_battina_chowdary/w/normal-and-tumor-analysisheshica-genomics-2a)
 - @VioletNwoke - Read mapping [Link to galaxy workflow](https://usegalaxy.eu/u/violet/w/workflow-constructed-from-history-hackbiogenomicstwoaviolet-4)
 - @AmaraA
