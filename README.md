@@ -175,12 +175,9 @@ This produces 5 files in the reference directory that BWA uses during the alignm
 	
 Note that  bwa is given a location , which is the path to the reference. Now, the two paired-end files are aligned and the alignment output (in SAM format) directed to a file. 24 threads (processors) were used to speed up this process and a read group (i.e sample ID) information was added to the alignment:
 	
- ```
-bwa mem -t 24 -R '@RG\tID:231335\tSM:Normal' ./reference/hg19.chr5_12_17.fa.gz SLGFSK-N_231335_r1_chr5_12_17.fastq.gz  SLGFSK-N_231335_r2_chr5_12_17.fastq.gz >SLGFSK-N_231335_paired.sam
+ ```bwa mem -t 24 -R '@RG\tID:231335\tSM:Normal' ./reference/hg19.chr5_12_17.fa.gz SLGFSK-N_231335_r1_chr5_12_17.fastq.gz  SLGFSK-N_231335_r2_chr5_12_17.fastq.gz >SLGFSK-N_231335_paired.sam```
 	
- bwa mem -t 24 -R '@RG\tID:231336\tSM:Tumor' ./reference/hg19.chr5_12_17.fa.gz SLGFSK-T_231336_r1_chr5_12_17.fastq.gz SLGFSK-T_231336_r2_chr5_12_17.fastq.gz >SLGFSK-T_231336_paired.sam
-
-```
+ ```bwa mem -t 24 -R '@RG\tID:231336\tSM:Tumor' ./reference/hg19.chr5_12_17.fa.gz SLGFSK-T_231336_r1_chr5_12_17.fastq.gz SLGFSK-T_231336_r2_chr5_12_17.fastq.gz >SLGFSK-T_231336_paired.sam```
 	
 
 	
@@ -251,9 +248,8 @@ done
 ```
 for sample in `cat list.txt`
 do
-        bamtools filter -in Mapping/${sample}.recalibrate.bam -mapQuality '<=254'' > Mapping/${sample}.refilter.bam	
+        bamtools filter -in Mapping/${sample}.recalibrate.bam -mapQuality "<=254" > Mapping/${sample}.refilter.bam	
 done
-
 ```
 
 ## Variant calling and classification
@@ -606,7 +602,7 @@ The last output of the Join operation was selected in the “file to arrange” 
 - @Olamide - Read Trimming and Filtering [Link to Galaxy Workflow](https://usegalaxy.eu/u/olamide21/w/identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs) 
 - @NadaaHussienn - Quality Control and Check [Link to Galaxy Workflow](https://usegalaxy.eu/u/nadahussien/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs-3)
 - @Christabel- [link to galaxy workflow](https://usegalaxy.eu/u/christabelmn1/w/somatic-and-germline-variants-and-gene-mutation-2)
-- @Marvellous - [Workflow 1](https://usegalaxy.eu/u/marvellous_oyebanjo/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs) and [Workflow 2](https://usegalaxy.eu/u/marvellous_oyebanjo/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs-2) 
+- @Marvellous - Adding additional Annotation to the Gene-Centered Report [Workflow 1](https://usegalaxy.eu/u/marvellous_oyebanjo/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs) and [Workflow 2](https://usegalaxy.eu/u/marvellous_oyebanjo/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs-2) 
 - @juwon - Introduction
 
 
