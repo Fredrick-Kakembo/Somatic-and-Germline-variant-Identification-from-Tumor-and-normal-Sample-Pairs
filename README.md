@@ -568,7 +568,7 @@ The last output of the Join operation was selected in the “file to arrange” 
 1. Galaxy Workflow:
 - @Rachael - Adding genetic and clinical evidence-based annotations [Link to galaxy workflow](https://usegalaxy.eu/u/rachael-eo/w/workflow-constructed-from-history-genomics-twoarachael-1)
 - @Mercy
-- @Orinda
+- @Orinda-Mapped reads filtering and Duplicate reads removal
 - @Heshica - Mapped Read Postprocessing (Left-align reads around indels , Recalibrate read mapping qualities and Refilter reads based on mapping quality)[Link to Galaxy Workflow](https://usegalaxy.eu/u/heshica_battina_chowdary/w/normal-and-tumor-analysisheshica-genomics-2a)
 - @VioletNwoke - Read mapping [Link to galaxy workflow](https://usegalaxy.eu/u/violet/w/workflow-constructed-from-history-hackbiogenomicstwoaviolet-4)
 - @AmaraA
