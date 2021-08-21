@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo -e "\n Downloading data... \n"
 	
 mkdir -p raw_data 
