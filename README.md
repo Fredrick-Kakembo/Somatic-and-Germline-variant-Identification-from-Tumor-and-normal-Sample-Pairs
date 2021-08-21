@@ -4,11 +4,11 @@
 
 ## `Introduction` <a name="introduction"></a>
 
-Mutations (random single or multiple base changes) in DNA or RNA can have a beneficial (eg in evolution), neutral or harmful effect in an organism. Many diseases including mostly **cancers** (second leading cuase of death) are as a result of harmful mutations in crucial genes eg Tumor suppressor genes, that cause cells to grow and divide uncontrollably, infiltrating and destroying normal body tissues. These mutations can be germline (inhrited) or somatic (acquired after birth), and a common kind of genetic mutation as a result of either is [Loss of Heterozygosity (LOH)](https://en.wikipedia.org/wiki/Loss_of_heterozygosity). LOH usually leads to loss of one normal copy or a group of genes, which is a common even in cancer development. Germline mutations can easily be identified by comparing a sample genome to a reference, however the story is quite different when it comes to somatic mutations as we need both a normal and tumor tissue DNA from the patient. 
+Mutations (random single or multiple base changes) in DNA or RNA can have a beneficial (eg in evolution), neutral or harmful effect in an organism. Many diseases including mostly **cancers** (second leading cause of death) are as a result of harmful mutations in crucial genes eg Tumor suppressor genes, that cause cells to grow and divide uncontrollably, infiltrating and destroying normal body tissues. These mutations can be germline (inhrited) or somatic (acquired after birth), and a common kind of genetic mutation as a result of either is [Loss of Heterozygosity (LOH)](https://en.wikipedia.org/wiki/Loss_of_heterozygosity). LOH usually leads to loss of one normal copy or a group of genes, which is a common even in cancer development. Germline mutations can easily be identified by comparing a sample genome to a reference, however the story is quite different when it comes to somatic mutations as we need both a normal and tumor tissue DNA from the patient. 
 
 <br>
 
-> In this project, we aimed at reproducing a workflow that identifies germline and somatic variants, variants affeted by LOH using both a health and tumor tissue, from which we would report variant sites and genes affected that could likely be the cause to the disease. Such insights can help us track the genetic events driving tumorigenesis in patients and might be useful in diagnosis, prognosis, developing and guiding therapeutics strategies.
+> In this project, we aimed at reproducing a workflow that identifies germline and somatic variants, variants affected by LOH using both a health and tumor tissue, from which we would report variant sites and genes affected that could likely be the cause to the disease. Such insights can help us track the genetic events driving tumorigenesis in patients and might be useful in diagnosis, prognosis, developing and guiding therapeutics strategies.
 
 <br>
 
@@ -604,6 +604,12 @@ By simply using the Join two files tools on Galaxy, this task was  achieved. Aft
 
 The last output of the Join operation was selected in the “file to arrange” section. The columns to be specified by name are: gene, chrom, synonym, hgnc_id, entrez_id, rvis_pct, is_TS, in_cgi_biomarkers, clinvar_gene_phenotype, gene_civic_url, and description. The result gotten was a [tabular gene report](https://github.com/Fredrick-Kakembo/Somatic-and-Germline-variant-Identification-from-Tumor-and-normal-Sample-Pairs/blob/main/Galaxy54-%5BColumn_arrange_on_data_53%5D%20(1).tabular), which was easy to understand and interpret.
 
+##CONCLUSION
+The Tumor/Normal data analysis workflow, consisting of Alignment and VarScan Somatic variant calling, demonstrates excellent performance for the detection of somatic variants.
+Somatic variant calling not only calls variants but also distinguishes Cancer-specific variants (Somatic mutations) found only in tumor tissues from germline mutations that are shared by tumor and healthy tissue, and loss-of-heterozygosity events; that is, the absence of one of two alleles found at a biallelic site of healthy tissues, in tumor tissues. This makes it a more optimal approach for applications requiring high precision such as novel mutation detection and mutation signature analysis.
+The interpretation of any list of variants (somatic, germline or LOH) almost always depends crucially on rich genetic and cancer-specific variants and gene annotations which can be inferred from the analysis.
+
+
 
 ---
 ##  List of team members according to the environment used<a name="contributor">:</a>
@@ -621,7 +627,7 @@ The last output of the Join operation was selected in the “file to arrange” 
 - @Mallika [Link to Galaxy Workflow](https://usegalaxy.eu/u/mallika_g/w/variant-analysis-mallika)
 - @Olamide - Read Trimming and Filtering [Link to Galaxy Workflow](https://usegalaxy.eu/u/olamide21/w/identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs) 
 - @NadaaHussienn - Quality Control and Check [Link to Galaxy Workflow](https://usegalaxy.eu/u/nadahussien/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs-3)
-- @Christabel- [link to galaxy workflow](https://usegalaxy.eu/u/christabelmn1/w/somatic-and-germline-variants-and-gene-mutation-2)
+- @Christabel- Conclusion [link to galaxy workflow](https://usegalaxy.eu/u/christabelmn1/w/somatic-and-germline-variants-and-gene-mutation-2)
 - @Marvellous - Adding additional Annotation to the Gene-Centered Report [Workflow 1](https://usegalaxy.eu/u/marvellous_oyebanjo/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs) and [Workflow 2](https://usegalaxy.eu/u/marvellous_oyebanjo/w/workflow-constructed-from-history-identification-of-somatic-and-germline-variants-from-tumor-and-normal-sample-pairs-2) 
 - @juwon - Introduction
 
