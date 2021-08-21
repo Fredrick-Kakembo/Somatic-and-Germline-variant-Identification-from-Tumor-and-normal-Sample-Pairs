@@ -167,21 +167,25 @@ conda install -c bioconda bamtools
 In order to align the data, we need a reference to align against.  First, a directory is created for the reference and then copied. The reference is  indexed to be able to align the data.This is done using the command;
 	
 ``` 
+#Index reference file	
 bwa index hg19.chr5_12_17.fa 
 ```
 	
-This produces 5 files in the reference directory that BWA uses during the alignment phase. The 5 files have different extensions named amb,ann,bwt pac and sa. Alignment can be done using the command;
-	
-```
-Bwa mem
-```
+This produces 5 files in the reference directory that BWA uses during the alignment phase. The 5 files have different extensions named amb,ann,bwt pac and sa. Alignment can be done using the program; `bwa mem`
+
 	
 Note that  bwa is given a location , which is the path to the reference. Now, the two paired-end files are aligned and the alignment output (in SAM format) directed to a file. 24 threads (processors) were used to speed up this process and a read group (i.e sample ID) information was added to the alignment:
 	
  ```
- bwa mem -t 24 -R '@RG\tID:231335\tSM:Normal' ./reference/hg19.chr5_12_17.fa.gz SLGFSK-N_231335_r1_chr5_12_17.fastq.gz  SLGFSK-N_231335_r2_chr5_12_17.fastq.gz >SLGFSK-N_231335_paired.sam
+ mkdir Mapping
 	
- bwa mem -t 24 -R '@RG\tID:231336\tSM:Tumor' ./reference/hg19.chr5_12_17.fa.gz SLGFSK-T_231336_r1_chr5_12_17.fastq.gz SLGFSK-T_231336_r2_chr5_12_17.fastq.gz >SLGFSK-T_231336_paired.sam
+#Perform alignment
+bwa mem -R '@RG\tID:231335\tSM:Normal' hg19.chr5_12_17.fa trimmed_reads/SLGFSK-N_231335_r1_paired.fq.gz \
+       trimmed_reads/SLGFSK-N_231335_r2_paired.fq.gz > Mapping/SLGFSK-N_231335.sam
+
+bwa mem -R '@RG\tID:231336\tSM:Tumor' hg19.chr5_12_17.fa trimmed_reads/SLGFSK-T_231336_r1_paired.fq.gz \
+        trimmed_reads/SLGFSK-T_231336_r2_paired.fq.gz > Mapping/SLGFSK-T_231336.sam	
+
  
  ```
 	
