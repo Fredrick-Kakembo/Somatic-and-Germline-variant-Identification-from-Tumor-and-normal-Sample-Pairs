@@ -635,7 +635,7 @@ In additon, We all came up with one comprehensive workflow for the entire team t
 - @juwon - Wrote the Introduction section of the documentation describing the goal of the tutrial and the approach we took [Link to Workflow](https://usegalaxy.eu/u/rachael-eo/w/workflow-constructed-from-history-team-genomicstwoa)
 
 
-2. Linux Workflow
+2. Linux Workflow  
 A few team members Embarked on reproducing the same tutorial as a Linux Pipeline. We generated a conscise bash script that implements the steps that is added to the 
 - @Praise - Described the commands used to download the samples and reference. the nature of the data that we had. 
 - @Fredrick - Team Lead and worked on the documentation of the annotation section
